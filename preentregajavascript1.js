@@ -1,14 +1,19 @@
+
 let efectivo = 10
+
 
 let valordeZ = prompt("Ingresar valor de Z");
 let cierreDeLote = prompt("Ingresar cierre de lote");
-let resultado1 = valordeZ - cierreDeLote;
-
 let egresos = prompt("Ingresar los egresos diarios");
-let resultado2 = resultado1 - egresos;
+let personal = prompt("Valor total de personal");
 
-let personal = prompt("Valor total de personal")
-let cierreDeCaja = resultado2 - personal;
+function resta(valordeZ, cierreDeLote, egresos, personal){
+return valordeZ - cierreDeLote - egresos - personal;
+}
+
+const cierreDeCaja = resta(valordeZ, cierreDeLote, egresos, personal);
+
+
 
 if(cierreDeCaja === efectivo){
     alert("El cierre de caja fue exitoso");
@@ -27,8 +32,39 @@ if(cierreDeCaja === efectivo){
 
 
 
+let empleados = prompt("Cantidad de empleados");
+let empleadosTotales = [];
 
+for (i = 0; i < empleados; i ++){
+    empleadosTotales[i] = [prompt("Nombre " + (i+1)),0];
+}
 
+const asistencia = (nombre,p)=>{
+    let presencia = prompt(nombre);
+    if (presencia == "p" || presencia == "p"){
+        empleadosTotales[p][1]++;
+    }
+}
+
+for (i = 0; i < 5; i++){
+    for (empleados in empleadosTotales){
+    asistencia (empleadosTotales[empleados][0],empleados);
+    }
+}
+
+for (empleados in empleadosTotales){
+    let respuesta = `${empleadosTotales[empleados][0]}:
+    Asistencias: ${empleadosTotales[empleados][1]}
+    Ausencias: ${5 - parseInt(empleadosTotales[empleados][1])}`;
+
+    if (5 - empleadosTotales[empleados][1] > 4){
+    respuesta+= "Muchas inasistencias, pierde bono";
+    }
+        else{
+            respuesta+= "Pocas ausencias, tiene bono"
+        }
+    document.write(respuesta)
+}
 
 
 
