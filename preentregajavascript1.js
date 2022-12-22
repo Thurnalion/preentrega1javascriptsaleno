@@ -1,6 +1,12 @@
+function calculo1(){
+    
+    let valorcaja = parseFloat(document.getElementById("caja").value)|| 0;
+    let valorz = parseFloat(document.getElementById("z").value )|| 0;
+}
 
+
+/*
 let efectivo = 10
-
 
 let valordeZ = prompt("Ingresar valor de Z");
 let cierreDeLote = prompt("Ingresar cierre de lote");
@@ -12,7 +18,7 @@ return valordeZ - cierreDeLote - egresos - personal;
 }
 
 const cierreDeCaja = resta(valordeZ, cierreDeLote, egresos, personal);
-
+*/
 
 
 if(cierreDeCaja === efectivo){
@@ -41,7 +47,7 @@ for (i = 0; i < empleados; i ++){
 
 const asistencia = (nombre,p)=>{
     let presencia = prompt(nombre);
-    if (presencia == "p" || presencia == "p"){
+    if (presencia == "p"  presencia == "p"){
         empleadosTotales[p][1]++;
     }
 }
