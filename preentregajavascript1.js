@@ -1,11 +1,18 @@
-function calculo1(){
+function calculo(){
     
     let valorcaja = parseFloat(document.getElementById("caja").value)|| 0;
-    let valorz = parseFloat(document.getElementById("z").value )|| 0;
+    let tf = parseFloat(document.getElementById("z").value )|| 0;
+    let personal = parseFloat(document.getElementById("empleados1").value )|| 0;
+    let egre = parseFloat(document.getElementById("egresos1").value )|| 0;
+    let cl = parseFloat(document.getElementById("cierrelote").value )|| 0;
+
+    document.getElementById("resultado").value = valorcaja + tf - 
+    personal - egre - cl;
+
 }
 
 
-/*
+/* NO TENER EN CUENTA
 let efectivo = 10
 
 let valordeZ = prompt("Ingresar valor de Z");
@@ -16,10 +23,13 @@ let personal = prompt("Valor total de personal");
 function resta(valordeZ, cierreDeLote, egresos, personal){
 return valordeZ - cierreDeLote - egresos - personal;
 }
-
 const cierreDeCaja = resta(valordeZ, cierreDeLote, egresos, personal);
 */
 
+
+
+
+/* ESTA PARTE DE ABAJO AUN NO LA ADAPTE 
 
 if(cierreDeCaja === efectivo){
     alert("El cierre de caja fue exitoso");
@@ -36,6 +46,7 @@ if(cierreDeCaja === efectivo){
 
 }
 
+*/
 
 
 let empleados = prompt("Cantidad de empleados");

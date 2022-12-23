@@ -19,25 +19,22 @@
     <form action="" class="form">
         
         <label class="cajaInicial"> Caja Inicial</label>
-        <input type="number" id="caja">
+        <input type="number" id="caja" oninput="calculo()">
 
-        <label class="totalZ"> Total Z</label>
-        <input type="number" id="z">
+        <label class="totalZ"> Total Facturado</label>
+        <input type="number" id="z" oninput="calculo()">
         
         <label class="empleados"> Empleados</label>
-        <input type="number" id="empleados1">
+        <input type="number" id="empleados1" oninput="calculo()">
 
         <label class="egresos">Egresos</label>
-        <input type="number" id="egresos1">
+        <input type="number" id="egresos1" oninput="calculo()">
 
         <label class="tarjetas">Cierre de Lote</label>
-        <input type="number" id="cierrelote">
+        <input type="number" id="cierrelote" oninput="calculo()">
 
-        <label class="efectivo">Efectivo</label>
-        <input type="number" id="efectivo1">
-
-        <label class="totalFacturado">Total Facturado</label>
-        <input type="number" id="totalfacturado1">
+        <label class="Cierre">Cierre de caja</label>
+        <input type="button" name="name" value="" id="resultado">
 
 
     </form>
