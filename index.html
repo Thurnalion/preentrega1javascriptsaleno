@@ -9,34 +9,40 @@
 </head>
 <body>
     <nav class="nav">
-        <ul>
-            <li><a href="index.html">Cierre de caja</a></li>
-            <li><a href="presentismo.html">Presentismo</a></li>
+        <ul class="ul">
+            <li class="li"><a href="index.html">Cierre de caja</a></li>
+            <li class="li"><a href="presentismo.html">Presentismo</a></li>
         </ul>
     </nav>
 
+    <h1 class="h1">Cierre de caja</h1>
 
     <form action="" class="form">
         
-        <label class="cajaInicial"> Caja Inicial</label>
-        <input type="number" id="caja" oninput="calculo()">
+        <label class="formulario"> Caja Inicial</label>
+        <input class="esapcio" type="number" id="caja" oninput="calculo()">
 
-        <label class="totalZ"> Total Facturado</label>
-        <input type="number" id="z" oninput="calculo()">
+        <label class="formulario"> Total Facturado</label>
+        <input class="esapcio" type="number" id="z" oninput="calculo()">
         
-        <label class="empleados"> Empleados</label>
-        <input type="number" id="empleados1" oninput="calculo()">
+        <label class="formulario"> Empleados</label>
+        <input class="esapcio" type="number" id="empleados1" oninput="calculo()">
 
-        <label class="egresos">Egresos</label>
-        <input type="number" id="egresos1" oninput="calculo()">
+        <label class="formulario">Egresos</label>
+        <input class="esapcio" type="number" id="egresos1" oninput="calculo()">
 
-        <label class="tarjetas">Cierre de Lote</label>
-        <input type="number" id="cierrelote" oninput="calculo()">
+        <label class="formulario">Cierre de Lote</label>
+        <input class="esapcio" type="number" id="cierrelote" oninput="calculo()">
 
-        <label class="Cierre">Cierre de caja</label>
-        <input type="button" name="name" value="" id="resultado">
+        <label class="formulario">Cierre de caja</label>
+        <input class="esapcio" type="number" id="resultado" oninput="calculo2()">
+        <br>        
+        <label class="formulario">Efectivo en la caja</label>
+        <input class="esapcio" type="number" id="efectivo" oninput="calculo2()">
+        <br>
+        <button type="button" onclick="calculo2()">Calcular</button>
 
-
+        
     </form>
 
 

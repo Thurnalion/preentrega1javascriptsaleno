@@ -8,46 +8,40 @@ function calculo(){
 
     document.getElementById("resultado").value = valorcaja + tf - 
     personal - egre - cl;
-
+/*
+    let final = parseFloat(document.getElementById("resultado").value )|| 0;
+    let cuenta = valorcaja + tf - personal - egre - cl;
+    cuenta === final
+    */
+    
 }
 
 
-/* NO TENER EN CUENTA
-let efectivo = 10
 
-let valordeZ = prompt("Ingresar valor de Z");
-let cierreDeLote = prompt("Ingresar cierre de lote");
-let egresos = prompt("Ingresar los egresos diarios");
-let personal = prompt("Valor total de personal");
+function calculo2(){
 
-function resta(valordeZ, cierreDeLote, egresos, personal){
-return valordeZ - cierreDeLote - egresos - personal;
-}
-const cierreDeCaja = resta(valordeZ, cierreDeLote, egresos, personal);
-*/
+let efeencaja = parseFloat(document.getElementById("efectivo").value )|| 0;
 
 
-
-
-/* ESTA PARTE DE ABAJO AUN NO LA ADAPTE 
-
-if(cierreDeCaja === efectivo){
+if(final === efeencaja){
     alert("El cierre de caja fue exitoso");
 
-}else if(cierreDeCaja < efectivo){
-    let resta = cierreDeCaja - efectivo;
+}else if(final < efeencaja){
+    let resta = final - efeencaja;
     let resta1 = resta * -1;
     alert("sobran " + resta1)
 
-}else(cierreDeCaja > efectivo);{
-    let resta2 = efectivo - cierreDeCaja;
+}else(final > efeencaja);{
+    let resta2 = efeencaja - final;
     let restaFinal = resta2 * -1;
     alert("Faltan " + restaFinal);
 
 }
 
-*/
+}
 
+
+/*
 
 let empleados = prompt("Cantidad de empleados");
 let empleadosTotales = [];
@@ -83,5 +77,5 @@ for (empleados in empleadosTotales){
     document.write(respuesta)
 }
 
-
+*/
 
