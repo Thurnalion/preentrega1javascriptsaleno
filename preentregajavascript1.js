@@ -8,11 +8,6 @@ function calculo(){
 
     document.getElementById("resultado").value = valorcaja + tf - 
     personal - egre - cl;
-/*
-    let final = parseFloat(document.getElementById("resultado").value )|| 0;
-    let cuenta = valorcaja + tf - personal - egre - cl;
-    cuenta === final
-    */
     
 }
 
@@ -21,6 +16,7 @@ function calculo(){
 function calculo2(){
 
 let efeencaja = parseFloat(document.getElementById("efectivo").value )|| 0;
+let final = parseFloat(document.getElementById("resultado").value )|| 0;
 
 
 if(final === efeencaja){
@@ -41,7 +37,7 @@ if(final === efeencaja){
 }
 
 
-/*
+/* Esto funciona pero no esta daptado 
 
 let empleados = prompt("Cantidad de empleados");
 let empleadosTotales = [];
