@@ -45,3 +45,18 @@
     width: 10vw;
 
 }
+
+.page{
+    background-color:black ;
+    height: 90vh;
+}
+
+
+
+.texto{
+    font-size: 20px;
+    color: beige;
+}
+.espacio{
+    font-size: 18px;
+}
