@@ -50,6 +50,11 @@ function inicio(){
     }
 }
 
+
+document.querySelector("#burritos").innerHTML = "1600"
+
+
+
 /* Esto funciona pero no esta daptado 
 
 let empleados = prompt("Cantidad de empleados");

@@ -60,3 +60,17 @@
 .espacio{
     font-size: 18px;
 }
+
+/*Productos*/
+
+.tabla{
+    margin: 5vh;
+    display: flex;
+    flex-flow: row;
+}
+
+.espacio{
+    list-style: none;
+    font-size: 25px;
+
+}
