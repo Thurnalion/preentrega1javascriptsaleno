@@ -1,20 +1,29 @@
-{   
-    "cocción": "horno",
-    "duración": "20 minutos",
-    "ingredientes": ["tortilla de maiz","carne","mozarella","lechuga","crema acida"],
-    "valor": "1200",
-}
+[
+    {   
+    "tacos":{
+        "cocción": "horno",
+        "duración": "20 minutos",
+        "ingredientes": ["tortilla de maiz","carne","mozarella","lechuga","crema acida"],
+        "valor": "1200"
+        }
+    },
 
-{   
-    "cocción": "plancha",
-    "duración": "10 minutos",
-    "ingredientes": ["tortilla de trigo","pollo","mozarella","guacamole","crema acida"],
-    "valor": "1300",
-}
+    {
+    "quesadillas":{
+        "cocción": "plancha",
+        "duración": "10 minutos",
+        "ingredientes": ["tortilla de trigo","pollo","mozarella","guacamole","crema acida"],
+        "valor": "1300"
+        }
+    }, 
 
-{   
-    "cocción": "horno",
-    "duración": "15 minutos",
-    "ingredientes": ["tortilla de trigo","carne","mozarella","porotos","crema acida"],
-    "valor": "1500",
-}
+    {   
+    "burritos":{
+        "cocción": "horno",
+        "duración": "15 minutos",
+        "ingredientes": ["tortilla de trigo","carne","mozarella","porotos","crema acida"],
+        "valor": "1500"
+        }
+    }
+
+]
