@@ -56,34 +56,31 @@ document.querySelector("#burritos").innerHTML = "1600"
 const recetas = `
 [
     {   
-    "tacos":{
+        "plato" : "tacos",
         "cocción": "horno",
-        "duración": "20",
+        "duración": 20,
         "ingredientes": ["tortilla de maiz","carne","mozarella","lechuga","crema acida"],
-        "valor": "1200"
-        }
+        "valor": 1200
     },
 
     {
-    "quesadillas":{
+        "plato" : "quesadillas",
         "cocción": "plancha",
-        "duración": "10",
+        "duración": 10,
         "ingredientes": ["tortilla de trigo","pollo","mozarella","guacamole","crema acida"],
-        "valor": "1300"
-        }
+        "valor": 1300
     }, 
 
     {   
-    "burritos":{
+        "plato" : "burritos",
         "cocción": "horno",
-        "duración": "15",
+        "duración": 15,
         "ingredientes": ["tortilla de trigo","carne","mozarella","porotos","crema acida"],
-        "valor": "1500"
-        }
+        "valor": 1500
     }
 
-]
-`
+]`;
+
 
 console.log(typeof recetas);
 
@@ -91,7 +88,7 @@ const JsonData = JSON.parse(recetas);
 console.log(typeof JsonData);
 
 const recetaLarga = JsonData.filter(
-    (recetas) => erer.duracion > 15);
+    (recetas) => recetas.duración > 15);
 
 console.log(recetaLarga);
 
