@@ -43,6 +43,7 @@
     align-items: center;
     display: flex;
     flex-flow: column;
+    gap: 1vh;
 }
 
 .formulario{
@@ -104,8 +105,33 @@
     flex-flow: row;
 }
 
-.espacio{
+.fotos{
+    display: flex;
+    flex-flow: column;
+    gap: 2vh;
+}
+
+.imgproductos{
+    width: 10vw;
+    height: 10vh;
+}
+
+.productos{
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 2vh;
+    
+}
+
+.espacio2{
     list-style: none;
     font-size: 25px;
-
+    margin: 7vh 2vw;
+    margin-top: 3vh;
+    
 }
+
+
+
+
+
