@@ -38,3 +38,23 @@ const recetaLarga = JsonData.filter(
     (recetas) => recetas.duración > 15);
 
 console.log(recetaLarga);
+
+
+
+var receta = document.getElementById("boton3");
+
+function cargarajax() {
+
+    var xhr = new XMLHttpRequest();
+
+    xhr.open("GET","datos2.json", true);
+    xhr.onreadystatechange = function(){
+        if(xhr.readyState == 4 && xhr.status == 200){
+            console.log("se cargo");
+        }
+    }
+
+    xhr.send(); 
+}
+
+receta.addEventListener("click", cargarajax);

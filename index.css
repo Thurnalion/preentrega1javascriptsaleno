@@ -131,6 +131,14 @@
     
 }
 
+.boton3{
+    width: 5vw;
+    height: 4vh;
+    display: flex;
+    flex-flow: column;
+    margin: 7vh 2vw;
+    margin-top: 3vh;
+}
 
 
 
