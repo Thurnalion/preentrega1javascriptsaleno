@@ -15,22 +15,24 @@ function calculo(){
 
 function calculo2(){
 
-let efeencaja = parseFloat(document.getElementById("efectivo").value )|| 0;
 let final = parseFloat(document.getElementById("resultado").value )|| 0;
+let efeencaja = parseFloat(document.getElementById("efectivo").value )|| 0;
+
+
 
 
 if(final === efeencaja){
-    alert("El cierre de caja fue exitoso");
+    document.querySelector("#texto1").innerHTML = "El cierre de caja fue exitoso";
 
 }else if(final < efeencaja){
-    let resta = final - efeencaja;
-    let resta1 = resta * -1;
-    alert("sobran " + resta1)
+    let resta = efeencaja - final;
+    let restafinal = resta;
+    document.querySelector("#texto1").innerHTML = "Sobra " + restafinal;
+
 
 }else(final > efeencaja);{
-    let resta2 = efeencaja - final;
-    let restaFinal = resta2 * -1;
-    alert("Faltan " + restaFinal);
+    let resta2 =  final - efeencaja;
+    document.querySelector("#texto1").innerHTML ="Falta " + resta2;
 
     }
 }

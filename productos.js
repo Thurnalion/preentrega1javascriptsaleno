@@ -41,6 +41,62 @@ console.log(recetaLarga);
 
 
 
+/*
+function ajax(){
+    const http = new XMLHttpRequest();
+    const url = "datos2.json";
+
+    http.onreadystatechange = function(){
+        if(this.readyState == 4 && this.status == 200){
+
+            console.log("Recibido el fichero");
+            let datos = JSON.parse(this.responseText);
+            console.log(datos);
+        }
+
+    }
+
+    console.log("Se envia la peticion");
+
+    http.open("GET", url, true);
+    http.send();
+  
+}
+
+window.onload = ajax;
+
+*/
+
+
+
+function traerDatos(){
+
+    const xhttp = new XMLHttpRequest();
+    xhttp.open("GET", "datos2.json", true);
+    xhttp.send();
+    xhttp.onreadystatechange = function(){
+        if(this.readyState == 4 && this.status == 200){
+            let datos = JSON.parse(this.responseText);
+            let res = document.querySelector('#res');
+            res.innerHTML = '';
+
+            for(let item of datos){
+                res.innerHTML += `
+                <tr>
+                    <td>${item.receta}</td>
+                </tr>
+                `
+            }
+        }
+    }
+}
+document.querySelector("#boton3").addEventListener("click", traerDatos);
+
+
+
+
+
+/*
 var receta = document.getElementById("boton3");
 
 function cargarajax() {
@@ -58,3 +114,5 @@ function cargarajax() {
 }
 
 receta.addEventListener("click", cargarajax);
+
+*/
