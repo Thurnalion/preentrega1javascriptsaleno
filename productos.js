@@ -40,6 +40,46 @@ const recetaLarga = JsonData.filter(
 console.log(recetaLarga);
 
 
+document.getElementById('txtBtn').addEventListener('click', cargarTXT);
+document.getElementById('jsonBtn').addEventListener('click', cargarJSON);
+
+function cargarTXT(){
+    fetch('datos2.txt')
+        .then(function(res){
+            return res.text();
+        })
+        .then(function(empleados){
+            console.log(empleados);
+            document.getElementById('resultado').innerHTML = empleados;
+        })
+        .catch(function(error){
+            console.log(error);
+        });
+}
+
+function cargarJSON(){
+    fetch('datos2.json')
+        .then(function(res){
+        return res.json();
+        })
+        .then(function(data){
+            let html = '';
+            data.forEach(function(recipe) {
+                html +=`
+                    <li>${recipe.receta} ${recipe.duración}</li><br>
+                    `;
+            })
+            document.getElementById('resultado').innerHTML = html;
+        })
+}
+
+
+
+
+
+
+
+
 
 /*
 function ajax(){
@@ -68,7 +108,7 @@ window.onload = ajax;
 */
 
 
-
+/*
 function traerDatos(){
 
     const xhttp = new XMLHttpRequest();
@@ -91,6 +131,8 @@ function traerDatos(){
     }
 }
 document.querySelector("#boton3").addEventListener("click", traerDatos);
+
+*/
 
 
 
