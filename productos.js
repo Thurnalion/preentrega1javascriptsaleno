@@ -40,22 +40,9 @@ const recetaLarga = JsonData.filter(
 console.log(recetaLarga);
 
 
-document.getElementById('txtBtn').addEventListener('click', cargarTXT);
 document.getElementById('jsonBtn').addEventListener('click', cargarJSON);
 
-function cargarTXT(){
-    fetch('datos2.txt')
-        .then(function(res){
-            return res.text();
-        })
-        .then(function(empleados){
-            console.log(empleados);
-            document.getElementById('resultado').innerHTML = empleados;
-        })
-        .catch(function(error){
-            console.log(error);
-        });
-}
+
 
 function cargarJSON(){
     fetch('datos2.json')
