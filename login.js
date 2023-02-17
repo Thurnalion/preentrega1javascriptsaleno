@@ -5,9 +5,12 @@ let pass = document.getElementById("contraseña").value;
 
     if(user == "nico" && pass == "nicolas"){
     window.location = "presentismo.html";
-    } else{
-        innerHtml +=
-    alert("Datos incorrectos.");
+
+    } else if(user != "nico"){
+        document.getElementById('alerta').innerHTML = "Usuario incorrecto";
+
+    }else{
+        document.getElementById('alerta').innerHTML = "Contraseña incorrecta";
     }
     
 }

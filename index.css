@@ -62,7 +62,6 @@
 
 .page{
     background: linear-gradient(to right, #7286D3, #A0C3D2);
-    height: 90vh;
 }
 
 
@@ -93,6 +92,12 @@
     height: 4vh;
     font-size: 18px;
    
+}
+
+.alerta{
+    color: brown;
+    margin-top: 3vh;
+    font-weight: bold;
 }
 
 

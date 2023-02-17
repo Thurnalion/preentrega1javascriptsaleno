@@ -19,20 +19,17 @@ let final = parseFloat(document.getElementById("resultado").value )|| 0;
 let efeencaja = parseFloat(document.getElementById("efectivo").value )|| 0;
 
 
-
-
 if(final === efeencaja){
-    document.querySelector("#texto1").innerHTML = "El cierre de caja fue exitoso";
+    let cuenta = final - efeencaja;
+   document.querySelector('#texto1').innerHTML = `Falta ${cuenta} El cierre de caja fue exitoso`;
 
 }else if(final < efeencaja){
     let resta = efeencaja - final;
-    let restafinal = resta;
-    document.querySelector("#texto1").innerHTML = "Sobra " + restafinal;
-
+    document.querySelector('#texto1').innerHTML = `Sobra ${resta}`;
 
 }else(final > efeencaja);{
     let resta2 =  final - efeencaja;
-    document.querySelector("#texto1").innerHTML ="Falta " + resta2;
+    document.querySelector('#texto1').innerHTML =`Falta ${resta2}`;
 
     }
 }
