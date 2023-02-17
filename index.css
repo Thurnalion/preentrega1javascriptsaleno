@@ -165,6 +165,17 @@
     margin-left: 2vw;
 }
 
+/*presentismo*/
+
+.boton4{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.table{
+    
+}
 
 
 
