@@ -124,7 +124,7 @@
 .productos2{
     list-style: none;
     margin-left: 3vw;
-    margin-top: 4vh;
+    margin-top: 3vh;
     font-size: 25px;
     display: flex;
     flex-flow: column;
@@ -135,7 +135,7 @@
 
 .precios2{
     margin-left: 2vw;
-    margin-top: 5vh;
+    margin-top: 3vh;
     font-size: 25px;
     list-style: none;
     display: flex;
@@ -173,9 +173,6 @@
     justify-content: center;
 }
 
-.table{
-    
-}
 
 
 

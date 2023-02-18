@@ -33,5 +33,7 @@ if(final === efeencaja){
 
     }
 }
-
+//En esta funcion no encuentro el error, las cuentas me las hace bien pero no puedo lograr que el
+//texto en html de las priemras 2 opciones aparezca.
+// La verdad me gustaría saber que es lo que falla porque hace dias que no doy con una solucion
 
